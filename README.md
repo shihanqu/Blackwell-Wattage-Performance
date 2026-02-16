@@ -1,6 +1,12 @@
 # Blackwell-Wattage-Performance
 
-Interactive 3D visualization of vLLM benchmarks across multiple wattage configurations on 2× RTX PRO 6000 Blackwell GPUs.
+For those wondering which variant of the Nvidia RTX 6000 Pro they should buy, or how power limits affect performance... Here's an interactive 3D visualization of inference performance vs -pl and user concurrency. Minimax-m2.5-NVFP4 on 2x RTX 6000 Pro tested.
+
+![Heatmap Screenshot](screenshot.png)
+
+### [👉 Live Interactive 3D Visualization](https://shihanqu.github.io/Blackwell-Wattage-Performance/)
+
+---
 
 ### Features
 - **3D Heatmap**: Compare throughput across concurrency and context length.
@@ -8,4 +14,7 @@ Interactive 3D visualization of vLLM benchmarks across multiple wattage configur
 - **Slicing**: Analyze cross-sections by user count, context length, or target throughput.
 - **Interactive Toggles**: Show/hide specific power limits (200W–600W).
 
-View the live visualization: [https://shihanqu.github.io/Blackwell-Wattage-Performance/](https://shihanqu.github.io/Blackwell-Wattage-Performance/)
+### Benchmarking Rig
+- **GPUs**: 2× RTX PRO 6000 Blackwell
+- **VRAM**: 192GB Total
+- **Model**: MiniMax-M2.5-NVFP4
