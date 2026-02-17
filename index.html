@@ -776,9 +776,10 @@
         // ═══════════ WIGGLE ═══════════
         document.getElementById('plot').addEventListener('wheel', (e) => {
             if (!wiggleActive || !wiggleBaseCamera) return;
-            const s = e.deltaY > 0 ? 1.0025 : 0.9975;
+            e.preventDefault();
+            const s = e.deltaY > 0 ? 1.05 : 0.95;
             wiggleBaseCamera.eye.x *= s; wiggleBaseCamera.eye.y *= s; wiggleBaseCamera.eye.z *= s;
-        }, { passive: true, capture: true });
+        }, { passive: false, capture: true });
         function startWiggle() {
             wiggleBaseCamera = getCurrentCamera();
             wiggleAngle = 0;
