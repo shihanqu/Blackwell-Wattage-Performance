@@ -2,7 +2,7 @@
 
 For those wondering which variant of the Nvidia RTX 6000 Pro they should buy, or how power limits affect performance... Here's an interactive 3D visualization of inference performance vs -pl and user concurrency. Minimax-m2.5-NVFP4 on 2x RTX 6000 Pro tested.
 
-### [👉 Live Interactive 3D Visualization](https://shihanqu.github.io/Blackwell-Wattage-Performance/)
+### [👉 Live Interactive 3D Visualization HERE](https://shihanqu.github.io/Blackwell-Wattage-Performance/)
 
 ![Heatmap Screenshot](screenshot.png)
 
